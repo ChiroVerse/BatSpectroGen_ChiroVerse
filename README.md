@@ -112,4 +112,5 @@ Supported by:
 
 Automated_Batch_Spectrogram_Generator © 2025 by Kadambari Deshpande and Vedant Barje is licensed under CC BY-NC-SA 4.0
 https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en
+
 ---
