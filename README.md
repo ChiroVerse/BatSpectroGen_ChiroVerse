@@ -102,7 +102,8 @@ Created by **ChiroVerse**
 
 - Kadambari Deshpande
 - Vedant Barje
-- Get in touch: [connect.chiroverse@gmail.com](mailto:connect.chiroverse@gmail.com) 
+
+  Get in touch: [connect.chiroverse@gmail.com](mailto:connect.chiroverse@gmail.com) 
 
 Supported by:  
 - **Indian Institute for Human Settlements (Bengaluru)**  
