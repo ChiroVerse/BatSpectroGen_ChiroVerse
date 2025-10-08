@@ -14,7 +14,7 @@ Ideal for **bioacoustics, bat call analysis, and wildlife sound monitoring**.
 - **Filtering** options for frequency ranges.
 - **Multiprocessing** for faster batch analysis.
 - Progress bar, log window, and error handling built in.
-- Designed(default settings) for bat call but possible to use for **any bioaccoustic analysis**.
+- Designed for bat ultrasonic calls (default settings) but can be used for audio files of **all other taxa** too by changing specific settings.
 
 ---
 
