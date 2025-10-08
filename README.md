@@ -101,7 +101,7 @@ Unzip (if downloaded as ZIP) and keep all files together.
 ## 👥 Credits & Support
 Created by **ChiroVerse**  
 
--**Vedant Barje**
+- **Vedant Barje**
 - **Kadambari Deshpande**
 
   Get in touch: [connect.chiroverse@gmail.com](mailto:connect.chiroverse@gmail.com) 
