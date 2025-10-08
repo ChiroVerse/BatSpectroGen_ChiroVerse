@@ -98,7 +98,7 @@ Unzip (if downloaded as ZIP) and keep all files together.
 ---
 
 ## 👥 Credits & Support
-Created by **BatEchoMon**  
+Created by **ChiroVerse**  
 
 - Kadambari Deshpande – [kvd.novel@gmail.com](mailto:kvd.novel@gmail.com)  
 - Vedant Barje – [vab4698@gmail.com](mailto:vab4698@gmail.com)  
