@@ -101,8 +101,8 @@ Unzip (if downloaded as ZIP) and keep all files together.
 ## 👥 Credits & Support
 Created by **ChiroVerse**  
 
-- Kadambari Deshpande
-- Vedant Barje
+- **Kadambari Deshpande**
+- **Vedant Barje**
 
   Get in touch: [connect.chiroverse@gmail.com](mailto:connect.chiroverse@gmail.com) 
 
@@ -110,4 +110,6 @@ Supported by:
 - **Indian Institute for Human Settlements (Bengaluru)**  
 - **Wildlife Conservation Trust (Mumbai)**  
 
+Automated_Batch_Spectrogram_Generator © 2025 by Kadambari Deshpande and Vedant Barje is licensed under CC BY-NC-SA 4.0
+https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en
 ---
