@@ -57,7 +57,7 @@ Unzip (if downloaded as ZIP) and keep all files together.
 
 ## 🖥️ Using the GUI
 
-![GUI Screenshot Placeholder](images/gui_screenshot.png)
+![GUI Screenshot](images/Spectrogram_Generator_GUI.png)
 
 - **Input Folder** → Select the folder containing `.wav` audio files.  
 - **Output Folder (optional)** → Choose destination folder. If left blank, a folder named `Automated_Spectrogram_[inputfolder]` is created.  
@@ -79,7 +79,7 @@ Unzip (if downloaded as ZIP) and keep all files together.
 
 ## 📊 Output
 
-![Spectrogram Example Placeholder](images/spectrogram_example.png)
+![Spectrogram Example](images/Output_Example.jpg)
 
 - Each `.wav` file creates:
   - A **subfolder** named after the file.
