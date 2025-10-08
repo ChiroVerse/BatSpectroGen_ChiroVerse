@@ -64,7 +64,8 @@ Unzip (if downloaded as ZIP) and keep all files together.
 - **Segment Duration (s)** → Length of each segment (default: 5).  
 - **Number of Threads** → Choose number of CPU threads (default: system cores – 1).  
 - **Sampling Frequency (kHz)** → Default: 384 kHz.  
-- **Colormap** → Choose from `viridis`, `bone`, `YlGnBu`, `magma`, `Greys`.  
+- **Colormap** → Choose from `viridis`, `bone`, `YlGnBu`, `magma`, `Greys`.
+  ![Colormap](images/Colormap.png)
 - **Generate Power Spectrum** → Saves extra image with energy distribution.  
 - **Use Multiprocessing** → Enable for faster batch processing.  
 - **Filters** → Optionally select frequency range (min/max in kHz).  
