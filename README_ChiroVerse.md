@@ -1,4 +1,5 @@
-# Automated Batch Spectrogram Generator
+# BatSpectroGen_ChiroVerse
+## Automated Batch Spectrogram Generator
 
 This software lets users create **spectrograms** and **power spectrum images** by **batch processing** `.wav` audio files using a simple graphical interface.  
 It is designed to be **easy for non-programmers** and works on **Windows, macOS, and Linux**.  
