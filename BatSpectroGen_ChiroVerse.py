@@ -231,7 +231,7 @@ def worker_controller(input_folder, output_folder, files, segment_duration,
 
 def build_gui_and_run():
     root = tk.Tk()
-    root.title("Automated Batch Spectrogram Generator: By ChiroVerse")
+    root.title("BatSpectroGen: By ChiroVerse")
     root.geometry("850x650")
 
     input_path = tk.StringVar()
@@ -302,12 +302,12 @@ def build_gui_and_run():
         about_win.title("About")
         about_win.geometry("420x220")
         about_win.resizable(False, False)
-        tk.Label(about_win, text="Automated Batch Spectrogram Generator: by ChiroVerse", wraplength=400, font=("Aptos", 10, "bold")).pack(anchor="w", padx=20, pady=(6,0))
-        tk.Label(about_win, text="Created by - Kadambari Deshpande and Vedant Barje", wraplength=400).pack(anchor="w", padx=20, pady=(6,0))
+        tk.Label(about_win, text="BatSpectroGen: by ChiroVerse", wraplength=400, font=("Aptos", 10, "bold")).pack(anchor="w", padx=20, pady=(6,0))
+        tk.Label(about_win, text="Created by - Vedant Barje and Kadambari Deshpande", wraplength=400).pack(anchor="w", padx=20, pady=(6,0))
         tk.Label(about_win, text="Supported by - Indian Institute for Human Settlements, Bengaluru and Wildlife Conservation Trust, Mumbai", wraplength=400, justify="left").pack(anchor="w", padx=20, pady=(6,0))
         tk.Label(about_win, text="Build - v1.0").pack(anchor="w", padx=20, pady=(6,0))
         tk.Label(about_win, text="For more info get in touch at:", wraplength=400, justify="left").pack(anchor="w", padx=20, pady=(6,0))
-        tk.Label(about_win, text="Kadambari: kvd.novel@gmail.com and Vedant: vab4698@gmail.com").pack(anchor="w", padx=20, pady=(6,10))
+        tk.Label(about_win, text="connect.chiroverse@gmail.com").pack(anchor="w", padx=20, pady=(6,10))
 
         close_btn = tk.Button(about_win, text="Close", command=about_win.destroy)
         close_btn.pack(pady=5)
@@ -432,3 +432,4 @@ def build_gui_and_run():
 
 if __name__ == "__main__":
     build_gui_and_run()
+
