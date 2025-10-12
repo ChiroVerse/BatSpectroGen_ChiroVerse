@@ -59,7 +59,7 @@ Unzip (if downloaded as ZIP) and keep all files together.
 
 ## 🖥️ Using the GUI
 
-![GUI Screenshot](images/Spectrogram_Generator_GUI.png)
+![GUI Screenshot](images/Spectrogram_Generator_GUI_ChiroVerse.png)
 
 - **Input Folder** → Select the folder containing `.wav` audio files.  
 - **Output Folder (optional)** → Choose destination folder. If left blank, a folder named `Automated_Spectrogram_[inputfolder]` is created.  
@@ -67,7 +67,7 @@ Unzip (if downloaded as ZIP) and keep all files together.
 - **Number of Threads** → Choose number of CPU threads (default: system cores – 1).  
 - **Sampling Frequency (kHz)** → Default: 384 kHz.  
 - **Colormap** → Choose from `viridis`, `bone`, `YlGnBu`, `magma`, `Greys`.
-  ![Colormap](images/Colormap.png)
+  ![Colormap](images/Colormap_ChiroVerse.png)
 - **Generate Power Spectrum** → Saves extra image with energy distribution.  
 - **Use Multiprocessing** → Enable for faster batch processing.  
 - **Filters** → Optionally select frequency range (min/max in kHz).  
@@ -81,7 +81,7 @@ Unzip (if downloaded as ZIP) and keep all files together.
 
 ## 📊 Output
 
-![Spectrogram Example](images/Output_Example.jpg)
+![Spectrogram Example](images/Output_Example_ChiroVerse.jpg)
 
 - Each `.wav` file creates:
   - A **subfolder** named after the file.
