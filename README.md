@@ -51,7 +51,7 @@ Unzip (if downloaded as ZIP) and keep all files together.
 - Instead of double-clicking, open a terminal/command prompt.  
 - Navigate to the folder containing the script, then run:
   ```bash
-  python AutomatedSpectrogramGUI.py
+  python BatSpectroGen_ChiroVerse.py
   ```
   (or `python3` on macOS/Linux).
 
