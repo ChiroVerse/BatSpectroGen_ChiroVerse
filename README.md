@@ -44,7 +44,7 @@ Unzip (if downloaded as ZIP) and keep all files together.
 - **macOS**: Right-click the file → choose **“Open With” → Python Launcher** (instead of opening in a text editor).  
 - **Linux**: Right-click the file → choose **“Run with Python”**, or run from terminal with:
   ```bash
-  python3 AutomatedSpectrogramGUI.py
+  python3 BatSpectroGen_ChiroVerse.py
   ```
 
 ⚠️ **Note for users whose system opens Python files in a text editor (e.g. VS Code, IDLE, Notepad++):**  
