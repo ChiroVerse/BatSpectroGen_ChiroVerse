@@ -40,7 +40,8 @@ Download this repository as a **ZIP file** or clone it via Git.
 Unzip (if downloaded as ZIP) and keep all files together.
 
 ### Step 3 – Run the Program
-- **Windows**: Simply **double-click** the file `AutomatedSpectrogramGUI.py`.  
+- **Windows**: Simply **double-click** the file `AutomatedSpectrogramGUI.py`.
+- When launching the app for the first time, it will download the necessary dependencies and then start once the installation is complete.
 - **macOS**: Right-click the file → choose **“Open With” → Python Launcher** (instead of opening in a text editor).  
 - **Linux**: Right-click the file → choose **“Run with Python”**, or run from terminal with:
   ```bash
