@@ -5,6 +5,8 @@ This software lets users create **spectrograms** and **power spectrum images** b
 It is designed to be **easy for non-programmers** and works on **Windows, macOS, and Linux**.  
 Ideal for **bioacoustics, bat call analysis, and wildlife sound monitoring**.
 
+Cite as: [![DOI](https://zenodo.org/badge/1072106829.svg)](https://doi.org/10.5281/zenodo.17397284)
+
 ---
 
 ## 📌 Features
