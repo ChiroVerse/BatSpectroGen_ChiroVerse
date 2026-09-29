@@ -1,129 +1,153 @@
-# BatSpectroGen_ChiroVerse
-## Automated Batch Spectrogram Generator
+# BatSpectroGen
+## Batch spectrogram generation for bat and wildlife recordings
 
-This software lets users create **spectrograms** and **power spectrum images** by **batch processing** `.wav` audio files using a simple graphical interface.  
-It is designed to be **easy for non-programmers** and works on **Windows, macOS, and Linux**.  
-Ideal for **bioacoustics, bat call analysis, and wildlife sound monitoring**.
+BatSpectroGen turns a folder of `.wav` recordings into spectrogram images through a simple desktop window. It was developed for bat acoustics, bioacoustics and wildlife sound monitoring. After the one-time setup, no programming is needed.
 
-Cite as:                                                                                                                                                                                             
-```bash
-Barje, V. & Deshpande, K. 2025.                                                                                                                                                                      
-ChiroVerse/BatSpectroGen_ChiroVerse: v1.0.0                                                                                                                                                          
-GitHub Repo: https://github.com/ChiroVerse/BatSpectroGen_ChiroVerse
+BatSpectroGen works on Windows, macOS and Linux. It supports Python 3.9 through 3.13 and includes a low-memory option for older or less powerful computers.
+
+### Citation
+
+```text
+Barje, V. & Deshpande, K. 2025.
+BatSpectroGen, ChiroVerse.
+GitHub: https://github.com/ChiroVerse/BatSpectroGen_ChiroVerse
 https://doi.org/10.5281/zenodo.17397285
-```                                                                                                                                               
+```
+
 [![DOI](https://zenodo.org/badge/1072106829.svg)](https://doi.org/10.5281/zenodo.17397284)
 
-LICENSE: http://creativecommons.org/licenses/by-nc-sa/4.0/
+License: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ---
 
-## 📌 Features
-- Simple **double-click launch** – no coding required.
-- Process `.wav` files in batches with a **graphical interface (GUI)**.
-- Adjustable **segment duration**, **sampling frequency**, and **colormap**.
-- Optional **power spectrum** generation for each file.
-- **Filtering** options for frequency ranges.
-- **Multiprocessing** for faster batch analysis.
-- Progress bar, log window, and error handling built in.
-- Designed for **bat ultrasonic calls** (default settings) but can be used for audio files of **all other taxa** too by changing specific settings.
+## What BatSpectroGen does
+
+- Processes a folder of WAV recordings in one batch.
+- Reads the sampling rate from each recording without resampling the audio.
+- Splits recordings into spectrograms of a selected duration.
+- Keeps a shorter final segment instead of discarding it.
+- Provides low-memory, balanced and high-detail profiles.
+- Allows the displayed frequency range and colormap to be selected.
+- Can produce an average power-spectrum image for each recording.
+- Can process several recordings at once on computers with enough memory.
 
 ---
 
-## ⚙️ System Requirements
-- **Operating System**: Windows, macOS, or Linux  
-- **Python Version**: 3.9 or above  
-- **CPU**: Multi-core processor recommended for speed  
+## Before installing
+
+- Use Windows 10/11, a current macOS release, or a modern Linux distribution.
+- Install 64-bit Python 3.9, 3.10, 3.11, 3.12 or 3.13.
+- Keep the downloaded BatSpectroGen files together in one folder.
+- Internet access is needed during the first setup.
+
+For a workshop or first run, use the **Balanced** profile, one thread and leave multiprocessing switched off.
 
 ---
 
-## 🚀 Installation & Setup
+## Installation
 
-### Step 1 – Install Python
-- Download and install **Python 3.9+** from [python.org/downloads](https://www.python.org/downloads/).  
-- During installation on **Windows**, make sure to tick **“Add Python to PATH”**.  
-- On **macOS**, Python comes pre-installed, but it is recommended to update to the latest version.  
-- On **Linux**, use your package manager (see below).
+Download the repository with **Code → Download ZIP**, then extract the ZIP file.
 
-### Step 2 – Get the Program
-Download this repository as a **ZIP file** or clone it via Git.
+### Windows
 
-Unzip (if downloaded as ZIP) and keep all files together.
+1. Install Python from [python.org/downloads](https://www.python.org/downloads/) and select **Add Python to PATH** during installation.
+2. Double-click `Install_BatSpectroGen_Windows.bat` once.
+3. Double-click `Run_BatSpectroGen_Windows.bat` whenever you want to start BatSpectroGen.
 
-### Step 3 – Run the Program
-- **Windows**: Simply **double-click** the file `AutomatedSpectrogramGUI.py`.
-- When launching the app for the first time, it will download the necessary dependencies and then start once the installation is complete.
-- **macOS**: Right-click the file → choose **“Open With” → Python Launcher** (instead of opening in a text editor).  
-- **Linux**: Right-click the file → choose **“Run with Python”**, or run from terminal with:
-  ```bash
-  python3 BatSpectroGen_ChiroVerse.py
-  ```
+### macOS
 
-⚠️ **Note for users whose system opens Python files in a text editor (e.g. VS Code, IDLE, Notepad++):**  
-- Instead of double-clicking, open a terminal/command prompt.  
-- Navigate to the folder containing the script, then run:
-  ```bash
-  python BatSpectroGen_ChiroVerse.py
-  ```
-  (or `python3` on macOS/Linux).
+Install Python 3.9-3.13 from [python.org/downloads](https://www.python.org/downloads/) if needed. Open Terminal in the BatSpectroGen folder and run:
 
----
+```bash
+chmod +x Install_BatSpectroGen_macOS_Linux.sh Run_BatSpectroGen_macOS_Linux.sh
+./Install_BatSpectroGen_macOS_Linux.sh
+./Run_BatSpectroGen_macOS_Linux.sh
+```
 
-## 🖥️ Using the GUI
+### Linux
 
-![GUI Screenshot](images/Spectrogram_Generator_GUI_ChiroVerse.png)
+Install Python, Tk and `libsndfile` first. On Ubuntu or Debian:
 
-- **Input Folder** → Select the folder containing `.wav` audio files.  
-- **Output Folder (optional)** → Choose destination folder. If left blank, a folder named `Automated_Spectrogram_[inputfolder]` is created.  
-- **Segment Duration (s)** → Length of each segment (default: 5).  
-- **Number of Threads** → Choose number of CPU threads (default: system cores – 1).  
-- **Sampling Frequency (kHz)** → Default: 384 kHz.  
-- **Colormap** → Choose from `viridis`, `bone`, `YlGnBu`, `magma`, `Greys`.
-  ![Colormap](images/Colormap_ChiroVerse.png)
-- **Generate Power Spectrum** → Saves extra image with energy distribution.  
-- **Use Multiprocessing** → Enable for faster batch processing.  
-- **Filters** → Optionally select frequency range (min/max in kHz).  
+```bash
+sudo apt update
+sudo apt install python3 python3-venv python3-tk libsndfile1
+chmod +x Install_BatSpectroGen_macOS_Linux.sh Run_BatSpectroGen_macOS_Linux.sh
+./Install_BatSpectroGen_macOS_Linux.sh
+./Run_BatSpectroGen_macOS_Linux.sh
+```
 
-**Buttons**:
-- ✅ **Generate Spectrograms**: Starts processing  
-- ⛔ **Stop**: Halts processing  
-- ℹ️ **About**: Program info and credits  
+Setup creates a private `.venv` inside the BatSpectroGen folder. It does not replace other Python packages on the computer.
 
 ---
 
-## 📊 Output
+## Using BatSpectroGen
 
-![Spectrogram Example](images/Output_Example_ChiroVerse.jpg)
+- **Input Folder**: select the folder that directly contains the WAV recordings.
+- **Output Folder (optional)**: select a new or empty folder. If left blank, BatSpectroGen creates `BatSpectroGen_Output_<input folder>` beside the recordings.
+- **Segment Duration (s)**: number of seconds represented by each spectrogram. Use 5 seconds for the workshop unless instructed otherwise.
+- **Processing Profile**: controls output resolution and memory use.
+  - `low-memory`: 1600 × 900, smaller FFT, one file at a time.
+  - `balanced`: 1920 × 1080; recommended for most users.
+  - `high-detail`: 3840 × 2160; slower and more demanding.
+- **Number of Threads**: used only when **Use Multiprocessing** is selected.
+- **Generate Power Spectrum**: produces one image showing how acoustic energy is distributed across frequencies in each recording.
+- **Min / Max (kHz)**: changes the displayed frequency range. It does not filter or alter the audio.
+- **Colormap**: changes the colours used in the spectrogram.
 
-- Each `.wav` file creates:
-  - A **subfolder** named after the file.
-  - Spectrogram images (`.jpg`).
-  - (Optional) Power spectrum plots.  
+![Colormap examples](images/Colormap_ChiroVerse.png)
+
+Select **Generate Spectrograms** to begin. The output folder must be empty so that results made with different settings are not mixed.
+
+---
+
+## Output
+
+![Example BatSpectroGen output](images/Output_Example_ChiroVerse.jpg)
+
+Each recording receives its own output subfolder containing:
+
+- timestamped spectrogram images (`.jpg`);
+- an optional average power-spectrum image.
+
+BatSpectroGen does not create a CSV manifest or JSON run summary.
 
 ---
 
-## 🔧 Troubleshooting
-- **No `.wav` files found** → Check your input folder path.  
-- **Invalid values** → Only use numbers for duration, threads, and frequency.  
-- **Filter errors** → Ensure Min < Max frequency.  
-- If the program doesn’t open on double-click, try the **alternative launch method** (see above).  
-- Check the **log window** for error messages.  
+## For low-power computers
+
+- Select **Low-memory**.
+- Use one thread and leave multiprocessing off.
+- Turn off the power spectrum if it is not needed.
+- Close other applications while processing.
+- Avoid writing output directly into a synchronised cloud folder.
+
+Use **High-detail** only when the additional resolution is needed and the computer has enough memory and disk space.
 
 ---
 
-## 👥 Credits & Support
-Created by **ChiroVerse**  
+## Troubleshooting
 
-- **Vedant Barje**
-- **Kadambari Deshpande**
+- **BatSpectroGen does not open:** run the appropriate install file first.
+- **No WAV files found:** select the folder that directly contains the recordings.
+- **Output folder is not empty:** choose a new folder or move the earlier results elsewhere.
+- **Frequency-range error:** Min must be lower than Max, and Max cannot exceed half the recording's sampling rate.
+- **The computer becomes slow:** use Low-memory, one thread and no multiprocessing.
+- **macOS blocks a script:** right-click it and choose **Open**, or allow it in Privacy & Security settings.
+- **Linux reports a Tk error:** install `python3-tk` for the active Python installation.
 
-  Get in touch: [connect.chiroverse@gmail.com](mailto:connect.chiroverse@gmail.com) 
-
-Supported by:  
-- **Indian Institute for Human Settlements (Bengaluru)**  
-- **Wildlife Conservation Trust (Mumbai)**  
-
-Automated_Batch_Spectrogram_Generator © 2025 by Vedant Barje and Kadambari Deshpande is licensed under CC BY-NC-SA 4.0
-https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en
+The workshop folder also includes `BatSpectroGen_Manual.pdf` with the same instructions in a printable format.
 
 ---
+
+## Credits and support
+
+BatSpectroGen was created by **Vedant Barje** and **Kadambari Deshpande**, ChiroVerse.
+
+Contact: [connect.chiroverse@gmail.com](mailto:connect.chiroverse@gmail.com)
+
+Supported by:
+
+- Indian Institute for Human Settlements, Bengaluru
+- Wildlife Conservation Trust, Mumbai
+
+BatSpectroGen © 2025 Vedant Barje and Kadambari Deshpande. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en).

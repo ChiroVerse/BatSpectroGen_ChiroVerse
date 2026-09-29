@@ -1,0 +1,9 @@
+*.bat text eol=crlf
+*.cff text eol=lf
+*.md text eol=lf
+*.jpg binary
+*.pdf binary
+*.py text eol=lf
+*.png binary
+*.sh text eol=lf
+*.yml text eol=lf

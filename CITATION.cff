@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use BatSpectroGen, please cite this software."
+title: "BatSpectroGen"
+type: software
+version: 1.1.2
+date-released: 2026-09-29
+authors:
+  - family-names: Barje
+    given-names: Vedant
+  - family-names: Deshpande
+    given-names: Kadambari
+repository-code: "https://github.com/ChiroVerse/BatSpectroGen_ChiroVerse"
+url: "https://github.com/ChiroVerse/BatSpectroGen_ChiroVerse"
+doi: "10.5281/zenodo.17397285"
+license: "CC-BY-NC-SA-4.0"
