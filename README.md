@@ -1,5 +1,5 @@
 # BatSpectroGen
-## Batch spectrogram generation for bat and wildlife recordings
+## Batch spectrogram generation for bioacoustic recordings
 
 BatSpectroGen turns a folder of `.wav` recordings into spectrogram images through a simple desktop window. It was developed for bat acoustics, bioacoustics and wildlife sound monitoring. After the one-time setup, no programming is needed.
 
