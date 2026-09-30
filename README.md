@@ -40,7 +40,7 @@ License: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Keep the downloaded BatSpectroGen files together in one folder.
 - Internet access is needed during the first setup.
 
-For a workshop or first run, use the **Balanced** profile, one thread and leave multiprocessing switched off.
+For the irst run, use the **Balanced** profile, one thread and leave multiprocessing switched off.
 
 ---
 
